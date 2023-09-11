@@ -1,62 +1,135 @@
 
 
-print("Hello World");
 
 
-varText = 'First Value in my List'
-intVar = 12345
-floatVar = 123.98
-stringVar = "30"
-boolVar = True
-
-list = [1, 2, 3]
-
-print(varText + " " + str(list[0]))
 
 
-print ("Then Loop Through my List")
-for item in list:
-    print(item)
+
+#print("Hello World");
 
 
-print("List all types" + " " + varText + " " + str(list[0]) + " " + "Then the rest" + " " + str(intVar) + " " + str(floatVar) + " " + str(stringVar) + " " + str(boolVar)+ " " + "the whole list" + " " + str(list))
+#varText = 'First Value in my List'
+#intVar = 12345
+#floatVar = 123.98
+#stringVar = "30"
+#boolVar = True
+
+#list = [1, 2, 3]
+
+#print(varText + " " + str(list[0]))
 
 
-inputstring = input("Please type in a word: ")
-
-print("Print the String" + " " + inputstring )
-
-
-numVar1 = 15
-numVar2 = 23
-
-print(numVar1 + numVar2)
-
-print("Write both numbers out as a string" + " " + str(numVar1) + " and " + str(numVar2))
-
-print(numVar1 + int(stringVar))
+#print ("Then Loop Through my List")
+#for item in list:
+#    print(item)
 
 
-print(numVar1 , stringVar) # only converts to string
-
-print(int(floatVar)) # does not round up
-
-print(str(boolVar))
-print(int(boolVar)) 
-
-stringToBoolfalse = ""
-stringToBooltrue = "1"
-intToBooltrue = 234 #True
-intToBoolFalse = 0 #False
-
-floatToBoolFalse = 2.3 #True
-floatToBoolTrue = 0 #False
+#print("List all types" + " " + varText + " " + str(list[0]) + " " + "Then the rest" + " " + str(intVar) + " " + str(floatVar) + " " + str(stringVar) + " " + str(boolVar)+ " " + "the whole list" + " " + str(list))
 
 
-print ("convert string int float to bool")
-print(bool(stringToBoolfalse)) 
-print(bool(stringToBooltrue)) # string with char always true, empty false
-print(bool(intToBooltrue)) 
-print(bool(intToBoolFalse)) 
-print(bool(floatToBoolFalse)) 
-print(bool(floatToBoolTrue)) 
+#inputstring = input("Please type in a word: ")
+
+#print("Print the String" + " " + inputstring )
+
+
+#numVar1 = 15
+#numVar2 = 23
+
+#print(numVar1 + numVar2)
+
+#print("Write both numbers out as a string" + " " + str(numVar1) + " and " + str(numVar2))
+
+#print(numVar1 + int(stringVar))
+
+
+#print(numVar1 , stringVar) # only converts to string
+
+#print(int(floatVar)) # does not round up
+
+#print(str(boolVar))
+#print(int(boolVar)) 
+
+#stringToBoolfalse = ""
+#stringToBooltrue = "1"
+#intToBooltrue = 234 #True
+#intToBoolFalse = 0 #False
+
+#floatToBoolFalse = 2.3 #True
+#floatToBoolTrue = 0 #False
+
+
+#print ("convert string int float to bool")
+#print(bool(stringToBoolfalse)) 
+#print(bool(stringToBooltrue)) # string with char always true, empty false
+#print(bool(intToBooltrue)) 
+#print(bool(intToBoolFalse)) 
+#print(bool(floatToBoolFalse)) 
+#print(bool(floatToBoolTrue)) 
+
+
+
+
+xstring = input("Please type a number: ")
+
+if int(xstring) <= 10:
+    print("Number is less than or equal to 10")
+
+elif int(xstring) > 10 and int(xstring) <20: #using and
+    print("Number is greater than 10 but less than 20 using and")
+else: 
+    print("Number is 20 or greater")
+
+
+# using an or
+if int(xstring) > 10 or int(xstring) <5:
+    print("Number is greater than 10 but less than 5 using or")
+
+print("Lets do some maths :)")
+
+calNumber1 = input("Please type first number: ")
+calNumber2 =  input("Please type second number: ")
+calNumber3 =  input("Please type third number: ")
+
+
+
+print("do some calculations with 1st/2nd numbers")
+
+timesNumbers = int(calNumber1) * int(calNumber2) 
+divNumbers = int (calNumber1) / int(calNumber2)
+addNumbers = int (calNumber1) - int(calNumber2)
+subNumbers = int (calNumber1) + int(calNumber2)
+
+
+print(timesNumbers)
+print(divNumbers)
+print(addNumbers)
+print(subNumbers)
+
+
+if int (calNumber1) % int(calNumber2) != 0:
+     print(calNumber1, "does not divide evenly by", calNumber2 )
+else:
+    print(calNumber1, "divides evenly by", calNumber2 )
+
+
+print("compare the three numbers to find out the biggest")
+
+if int(calNumber1) >= int(calNumber2) and int(calNumber1) >=int(calNumber3):
+    print("the first number", calNumber1, "is the biggest number")
+elif int(calNumber2)>= int(calNumber1) and int(calNumber2)>= int(calNumber3):
+    print("the second number", calNumber2, "is the biggest number")
+else:
+    print("the third number", calNumber3, "is the biggest number")
+
+
+if int(calNumber1) < 1000:
+       if int(calNumber1) < 100:
+           if int(calNumber1) < 10:
+               print("you have a single digit number")
+           else:
+               print("you have a double digit number")
+       else:
+           print("you have a three digit number")
+else:
+    print("you have a giant number")
+        
