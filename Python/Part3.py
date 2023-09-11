@@ -9,4 +9,4 @@ print(int(width))
 
 
 print("Calculate the area", int(length) * int(width)  )
-
+print("Calculate the perimeter", (int(length) + int(width)) * 2 )
