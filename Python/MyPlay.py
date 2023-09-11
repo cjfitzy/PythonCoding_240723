@@ -1,9 +1,5 @@
 
 
-from ctypes.wintypes import BOOL
-from tkinter import StringVar
-
-
 print("Hello World");
 
 
