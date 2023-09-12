@@ -11,3 +11,6 @@ print(fact)
 
 
 
+for loopvar in range (1, inputvar1 + 1):
+    fact = loopvar * fact
+print(fact)
