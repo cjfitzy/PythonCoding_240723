@@ -56,3 +56,11 @@ ages = [12,18,33,84,45,67,12,82,95,16,10,23,43,29,40,34,30,16,44,69,70,74,38,65,
 
 ages.sort()
 print(ages)
+
+print("what proportion of ages fall between 16 and 25 ")
+
+total= len(ages)
+
+agepercent = (agecount / len(ages)) * 100
+
+print(agepercent)
