@@ -7,7 +7,10 @@ print("1    Add        +" )
 print("2    Subtract   -" )
 print("3    Multiply   *" )
 print("4    Divde      /" )
-print("5    Square     S" )
+print("5    Square     **" )
+print("6    modulo      %") # returns the remiander, if 0 then it divides perfect, if another number its has a remainder
+
+
 
 
 operation = input("Operation number:")
