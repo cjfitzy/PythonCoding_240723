@@ -8,3 +8,8 @@ for letter in varstring:
         vowlcount += 1 
 print(vowlcount)
 
+
+for letter in varstring:
+    if letter.upper in ["AEIOU"]:
+        vowlcount += 1 
+print(vowlcount)
