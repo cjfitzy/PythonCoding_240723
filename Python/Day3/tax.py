@@ -18,13 +18,13 @@ def getIncomeTax(salary):
     elif  salary <= low_tax_bracket_amount:
 
           lowtax = salary - personal_allowance
-          lowtaxamount = lowtax * 0.20
+          lowtaxamount = lowtax * low_tax_bracket_percent
           return ("Total Tax to be paid",round((lowtaxamount),2))
 
     elif salary <= mid_tax_bracket_amount:
 
         midtax = salary - low_tax_bracket_amount +1
-        midtaxamount = midtax * 0.4
+        midtaxamount = midtax * mid_tax_bracket_percent
 
         lowtaxamount = (low_tax_bracket_amount - personal_allowance)  * low_tax_bracket_percent
 
