@@ -30,16 +30,12 @@ town = 0
 for line in lines:
     words = line.split(",")
     studentid = (words[0])
-    town = str(words[4])'
-    #print(int(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4])+"'")
-          #,'"+words[2]+"','"+words[3]+"','"+words[5]+"'")
-    #sqlqueryvar= "Insert into students (StudentID,FirstName,LastName,Course,City) Values (int(words[0]),",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4])+"'")"
-   # sqlqueryvar= ("Insert into students (StudentID) Values ("+ str(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4])+"'")
-    print("Insert into students (StudentID) Values ("+ str(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) + "','"+ town + "'")
+    sqlqueryvar= ("Insert into Student (StudentID,FirstName,LastName,Course,City) Values ("+ str(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4]) + "')")
+    #print("Insert into Student (StudentID,FirstName,LastName,Course,City) Values ("+ str(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4]) + "')")
+    insertresult = sql_query(sqlqueryvar)
+    print(insertresult)
 
 
-#insertresult = sql_query(sqlqueryvar)
-#print(insertresult)
 
 
 
