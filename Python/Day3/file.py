@@ -40,6 +40,8 @@ print("---------------------------Other way------------------- ")
 companies = []
 sales = [] 
 
+header = carsales.readline()
+lines = carsales.readlines()
 
 for line in lines:
     parts = line.split(',')
@@ -81,3 +83,7 @@ print(juneTotal)
 print(julyTotal)
 print(augTotal)
 print("Total:",janTotal + febTotal + marchTotal + aprTotal + mayTotal + juneTotal + julyTotal + augTotal )
+
+
+
+

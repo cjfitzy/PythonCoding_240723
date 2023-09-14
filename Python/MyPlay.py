@@ -332,3 +332,49 @@ def doubler(inputvar):
 doubleme = input("What shall I double?")
 listofdoubledthings  = doubler(doubleme)
 print(listofdoubledthings)
+
+
+
+#from dataclasses import dataclass
+
+
+#fileobjectvar = open("Python/Day3/Readme.md")
+
+#print(type(fileobjectvar))
+#stringvar = fileobjectvar.read()
+#print(stringvar)
+
+#print("how many sheep in the file")
+#print(stringvar.count("sheep"))
+
+
+
+#dogstory = stringvar.replace("sheep", "dog")
+#print(dogstory)
+
+#fileobjectvar.seek(0)
+
+#listvar1 = fileobjectvar.readlines()
+#print(listvar1[2])  # graps a line 
+
+#listvar1.append("THE END\n")
+#print(listvar1)
+
+
+#fileobjectvar.close()
+
+#writefileobjectvar = open("Python/Day3/Readme.md","w") # open and delete file contents
+
+##push the data to be written to disk
+#writefileobjectvar.write(dogstory)
+#writefileobjectvar.close()
+
+
+##basic work
+##open()
+##read() or readline()
+##close()
+##manipulate the dataclass
+##open("w")
+##write()
+##close()
