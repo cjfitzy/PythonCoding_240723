@@ -4,7 +4,7 @@ class Budget:
         self.balance = balance
 
 
-    def depost(self,amount):
+    def deposit(self,amount):
         self.balance += amount
         return"Deposited amount"
 
@@ -29,7 +29,7 @@ print(clothing.balance)
 food.transfer(100,clothing)
 print(food.balance)
 print(clothing.balance)
-food.depost(1000)
+food.deposit(1000)
 print(food.balance)
 food.withdraw(100)
 print(food.balance)
