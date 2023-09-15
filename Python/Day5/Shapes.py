@@ -26,7 +26,8 @@ class Square(Shapes):
         return "Each side is {} cm".format(length)
     def area(self,length):
         squarearea = int(length) * int(length)
-        return "area = {} * {} which equals " + str(squarearea) + "cm".format(length)
+        #return "Each side is {} cm".format(length)
+        return "area = {} * {} which equals ".format(length,length) + str(squarearea) + "cm"
         
 
 
@@ -39,7 +40,7 @@ class Rectangle(Shapes):
         return "The two longer sides are {} cm and two shorter sides are {} cm".format(side1,side2)
     def area(self,side1,side2):
         recarea = int(side1) * int(side2)
-        return "area = {}* {} which equals " + str(recarea) + "cm"
+        return "area = {}* {} which equals ".format(side1,side2) + str(recarea) + "cm"
 
 squarey = Square()      
 
