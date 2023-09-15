@@ -14,12 +14,12 @@ def sql_query(sqlvar):
     return result
 
 
-#sqlqueryvar= "CREATE TABLE Students (StudentID INT PRIMARY KEY,FirstName VARCHAR(50),LastName VARCHAR(50) Null,Course VARCHAR(50),City VARCHAR(50) Null)"
+sqlqueryvar= "CREATE TABLE Students (StudentID INT PRIMARY KEY,FirstName VARCHAR(50),LastName VARCHAR(50) Null,Course VARCHAR(50),City VARCHAR(50) Null)"
 
 
 
-#insertresult = sql_query(sqlqueryvar)
-#print(insertresult)
+insertresult = sql_query(sqlqueryvar)
+print(insertresult)
 
 studentList = open("Python/Day4/Students.csv")
 
@@ -31,7 +31,6 @@ for line in lines:
     words = line.split(",")
     studentid = (words[0])
     sqlqueryvar= ("Insert into Student (StudentID,FirstName,LastName,Course,City) Values ("+ str(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4]) + "')")
-    #print("Insert into Student (StudentID,FirstName,LastName,Course,City) Values ("+ str(words[0]) + ",'" + str(words[1]) + "','" + str(words[2]) + "','"+ str(words[3]) +  "','" + str(words[4]) + "')")
     insertresult = sql_query(sqlqueryvar)
     print(insertresult)
 
