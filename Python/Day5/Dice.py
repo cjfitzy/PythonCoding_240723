@@ -1,13 +1,12 @@
+import random
 class Dice:
+
     def __init__(self,sides):
         self.sides = sides
         
         
-    #def isItAVowel (self,letter):
-    #   if letter.upper() in self.vowels:
-    #       return True
-    #   else:
-    #       return False
+    def roll(self):
+        return random.randint(1,self.sides)
 
 
 D2 = Dice(2)
@@ -15,7 +14,7 @@ D4 = Dice(4)
 D6 = Dice(6)
 D20 = Dice(20)
 
-
+print("random role for D2",D20.roll())
 
 
 
@@ -23,3 +22,14 @@ D20 = Dice(20)
         
  
 #print(LetterCheck("vowels").isItAVowel("C"))
+
+
+
+##character_sheet
+##name
+##class
+##level
+##race
+##alignment
+## hit point
+## armor class
