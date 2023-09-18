@@ -14,6 +14,8 @@ class Budget:
 
     def transfer(self,amount,targetitem):
         self.balance -= amount
+        #self.withdraw(amount)
+        #self.deposit(amount)
         targetitem.balance += amount
         return"transfered amount"
         
