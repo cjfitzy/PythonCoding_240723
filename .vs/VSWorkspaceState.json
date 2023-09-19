@@ -1,15 +1,16 @@
 {
   "ExpandedNodes": [
     "",
-    "\\pyapp",
+    "\\pyapp\\.pytest_cache",
     "\\pyapp\\appcode",
+    "\\pyapp\\htmlcov",
     "\\pyapp\\test_appcode",
     "\\Python",
-    "\\python-testing",
-    "\\python-testing\\programs",
-    "\\python-testing\\tests",
+    "\\Python\\Day3",
     "\\Python\\Day6",
-    "\\Python\\Day6\\testing"
+    "\\Python\\Day6\\testing",
+    "\\QACDevOps"
   ],
+  "SelectedNode": "\\.coverage",
   "PreviewInSolutionExplorer": false
 }
